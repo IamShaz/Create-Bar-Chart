@@ -1,0 +1,118 @@
+body {
+    font-family: 'Helvetica';
+    min-width: 700px;
+    font-variant: small-caps;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+h1 {
+    margin: 2em 0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#create-graph {
+    display: block;
+    margin: 3em auto 0 auto;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5em;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#create-graph:hover {
+    background-color: #ffffff;
+    color: #00FFFF;
+    cursor: none;
+}
+
+#reset {
+    margin: 1em auto;
+    background-color: #ffffff;
+    color: #00FFFF;
+    cursor: none;
+    display: block;
+    padding: 0.15em;
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+
+#reset:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#graphWrapper {
+    margin: 3em auto 0 auto;
+}
+
+.design-lines, .zeroLine {
+    background-color: lightgray;
+    position: relative;
+    z-index: -10;
+    display: inherit;
+}
+
+.design-lines {
+    height: 0.2em;
+    margin-left: 2em;
+}
+
+.zeroLine {
+    bottom: 1.15em;
+    margin-left: 1.75em;
+    height: 0.3em;
+}
+
+.xAxis {
+    display: inline-block;
+    margin-left: -1.05em;
+    padding-right: 0.2em;
+    position: relative;
+    bottom: 0em;
+    padding-top: 3em;
+}
+
+.xAxisLabels {
+    background-color: #FFA500;
+    width: 3em;
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0.5em;
+    position: relative;
+}
+
+.yAxis {
+    width: 1em;
+    display: inline-block;
+    padding-left: 0;
+    border-right: 0.3em solid lightgray;
+    padding-right: 1em;
+}
+
+.yAxis li {
+    list-style-type: none;
+    margin: 1.5em 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+.label {
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 2.5em;
+    word-wrap: break-word;
+    margin-left: -2.8em;
+}
