@@ -51,11 +51,16 @@ h1 {
 }
 
 #graphWrapper {
-    margin: 3em auto 0 auto;
+    margin: 5% auto;
+    width: 34em;
+    z-index: -10000;
+    overflow: hidden;
+    background-color: lightblue;
+    border: 2px solid #000000;
 }
 
 .design-lines, .zeroLine {
-    background-color: lightgray;
+    background-color: darkgray;
     position: relative;
     z-index: -10;
     display: inherit;
@@ -64,6 +69,7 @@ h1 {
 .design-lines {
     height: 0.2em;
     margin-left: 2em;
+    z-index: 100;    
 }
 
 .zeroLine {
@@ -78,7 +84,7 @@ h1 {
     padding-right: 0.2em;
     position: relative;
     bottom: 0em;
-    padding-top: 3em;
+    z-index: 100;
 }
 
 .xAxisLabels {
@@ -89,13 +95,14 @@ h1 {
     list-style-type: none;
     margin: 0.5em;
     position: relative;
+    border: 2px solid black;    
 }
 
 .yAxis {
     width: 1em;
     display: inline-block;
     padding-left: 0;
-    border-right: 0.3em solid lightgray;
+    border-right: 0.3em solid darkgray;
     padding-right: 1em;
 }
 
@@ -114,5 +121,5 @@ h1 {
     font-weight: bold;
     width: 2.5em;
     word-wrap: break-word;
-    margin-left: -2.8em;
+    margin-left: -2.8em; 
 }
