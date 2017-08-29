@@ -162,14 +162,9 @@ function createGraph (wrapper) {
             }                    
             
             inputArray[0][l] = item;
-            inputArray[1][l] = value;
+            inputArray[1][l] = value
         }
-        
-        if (graphTitle || valNum || value || count || item == '') {
-            window.location.reload();
-        } else {
-            drawChart(valNum,inputArray); 
-        }
+        drawChart(valNum,inputArray);
     }
             
     function resetButton () {
